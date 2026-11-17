@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentflow-hitl"
+version = "0.1.0"
+description = "Workflow engine for AI agents with autonomy policy, human approval gates and a tamper-evident audit log"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+agentflow = "agentflow.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
